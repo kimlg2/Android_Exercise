@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="35dp"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="상체 운동"
+        android:textSize="18dp"/>
+    <ImageButton
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/btn2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="하체 운동"
+        android:textSize="18dp" />
+
+    <ImageButton
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/btn3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="홈트 하는 법 "
+        android:textSize="18dp"/>
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/btn5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="식단 관리"
+        android:textSize="18dp"/>
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/btn1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI 검사"
+        android:layout_margin="7dp"
+        android:textSize="18dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/content1"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        >
+
+
+        <TextView
+
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+
+        <EditText
+
+            android:id="@+id/editText1"
+
+            android:layout_width="60dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="36dp"
+
+            android:layout_toEndOf="@+id/textView1"
+
+            android:hint="신장" />
+
+        <EditText
+
+            android:id="@+id/editText2"
+
+            android:layout_width="60dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+
+            android:hint="체중" />
+
+
+        <Button
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText1"
+            android:layout_margin="18dp"
+            android:layout_marginTop="50dp"
+            android:background="#DBDB"
+            android:textColor="#ffffff"
+            android:onClick="onBtnResult"
+            android:textSize="10dp"
+            android:text="검사" />
+    </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:text="20이하:저체중 20~25:정상"
+            android:textAlignment="center" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:text="25~30:과체중 30~40:비만 40이상:고도비만"
+            android:textAlignment="center" />
+
+
+
+
+
+</LinearLayout>
